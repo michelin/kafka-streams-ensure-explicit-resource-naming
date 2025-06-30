@@ -4,15 +4,15 @@
 [![Kafka Version](https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmichelin%2Fkafka-streams-ensure-explicit-resource-naming%2Fmain%2Fpom.xml&query=%2F*%5Blocal-name()%3D'project'%5D%2F*%5Blocal-name()%3D'properties'%5D%2F*%5Blocal-name()%3D'kafka-streams.version'%5D%2Ftext()&style=for-the-badge&logo=apachekafka&label=version)](https://github.com/michelin/kafka-streams-ensure-explicit-resource-naming/blob/main/pom.xml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?logo=apache&style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 
-[Overview](#-Overview) • [The Problem](#-the-problem) • [Why This Is a Problem](#why-this-is-a-problem) • [The Solution with KIP-1111](#-the-solution-kip-1111) • [Important Warning](#-important-warning) • [Examples](#examples)
+[Overview](#Overview) • [The Problem](#the-problem) • [Why This Is a Problem](#why-this-is-a-problem) • [The Solution with KIP-1111](#the-solution-kip-1111) • [Important Warning](#important-warning) • [Examples](#examples)
 
 Available since Apache Kafka 4.1.0, A practical demonstration of **KIP-1111: Enforcing Explicit Naming for Kafka Streams Internal Topics** - showcasing why explicit naming of internal resources is crucial for production-ready Kafka Streams applications.
 
-## 🎯 Overview
+## Overview
 
 This project demonstrates the implementation and benefits of [KIP-1111](https://cwiki.apache.org/confluence/display/KAFKA/KIP-1111:+Enforcing+Explicit+Naming+for+Kafka+Streams+Internal+Topics), which introduces the `ensure.explicit.internal.resource.naming` configuration to enforce explicit naming of Kafka Streams internal topics and state stores.
 
-## 🔍 The Problem
+## The Problem
 
 Kafka Streams automatically generates names for internal topics (changelog and repartition topics) and state stores when not explicitly specified. These auto-generated names include numeric indices based on topology position:
 
@@ -26,7 +26,7 @@ my-app-KSTREAM-AGGREGATE-STATE-STORE-0000000007-changelog
 - **State loss**: A changed changelog topic name causes complete state loss.
 - **Maintenance complexity**: Auto-generated names make debugging and monitoring harder.
 
-## 🔍 Real-World Example
+## Real-World Example
 
 ### Initial Topology:
 
@@ -51,7 +51,7 @@ builder.stream("clicks")
 
 The store name changes from `0000000001` to `0000000002`, resulting in full state loss!
 
-## 🚀 The Solution: KIP-1111
+## The Solution: KIP-1111
 
 KIP-1111 introduces a new configuration that prevents applications from starting if any internal topics use auto-generated names:
 
@@ -59,7 +59,7 @@ KIP-1111 introduces a new configuration that prevents applications from starting
 properties.put(ENSURE_EXPLICIT_INTERNAL_RESOURCE_NAMING_CONFIG, true);
 ```
 
-## ⚠️ Important Warning
+## Important Warning
 
 ### Configuration Behavior
 
@@ -70,7 +70,7 @@ When `ensure.explicit.internal.resource.naming` is set to:
 
 ### For Existing Applications
 
-> **🚨 CRITICAL**: If you have an existing Kafka Streams application and want to enable `ensure.explicit.internal.resource.naming=true`, you **MUST** handle data migration manually.
+> **CRITICAL**: If you have an existing Kafka Streams application and want to enable `ensure.explicit.internal.resource.naming=true`, you **MUST** handle data migration manually.
 
 **You are responsible for:**
 - Migrating existing **changelog topic data** to new explicitly-named topics
