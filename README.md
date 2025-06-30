@@ -4,7 +4,7 @@
 [![Kafka Version](https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fraw.githubusercontent.com%2Fmichelin%2Fkafka-streams-ensure-explicit-resource-naming%2Fmain%2Fpom.xml&query=%2F*%5Blocal-name()%3D'project'%5D%2F*%5Blocal-name()%3D'properties'%5D%2F*%5Blocal-name()%3D'kafka-streams.version'%5D%2Ftext()&style=for-the-badge&logo=apachekafka&label=version)](https://github.com/michelin/kafka-streams-ensure-explicit-resource-naming/blob/main/pom.xml)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg?logo=apache&style=for-the-badge)](https://opensource.org/licenses/Apache-2.0)
 
-[Overview](#-Overview) • [The Problem](#-the-problem) • [why-this-is-a-problem](#why-this-is-a-problem) • [The Solution with KIP-1111](#-the-solution-kip-1111) • [Important Warning](#-important-warning) • [Examples](#examples)
+[Overview](#-Overview) • [The Problem](#-the-problem) • [Why This Is a Problem](#why-this-is-a-problem) • [The Solution with KIP-1111](#-the-solution-kip-1111) • [Important Warning](#-important-warning) • [Examples](#examples)
 
 Available since Apache Kafka 4.1.0, A practical demonstration of **KIP-1111: Enforcing Explicit Naming for Kafka Streams Internal Topics** - showcasing why explicit naming of internal resources is crucial for production-ready Kafka Streams applications.
 
