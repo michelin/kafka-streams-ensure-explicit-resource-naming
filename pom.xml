@@ -8,9 +8,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>without-naming</module>
-        <module>with-naming</module>
         <module>commons</module>
+        <module>with-naming</module>
+        <module>without-naming</module>
     </modules>
 
     <properties>

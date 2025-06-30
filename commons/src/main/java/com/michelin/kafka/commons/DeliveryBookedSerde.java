@@ -19,12 +19,11 @@
 package com.michelin.kafka.commons;
 
 import com.google.gson.Gson;
+import java.nio.charset.StandardCharsets;
+import java.util.Map;
 import org.apache.kafka.common.serialization.Deserializer;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serializer;
-
-import java.nio.charset.StandardCharsets;
-import java.util.Map;
 
 public class DeliveryBookedSerde implements Serde<DeliveryBooked> {
 

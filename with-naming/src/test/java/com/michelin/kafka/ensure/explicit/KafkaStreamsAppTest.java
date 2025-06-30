@@ -18,14 +18,13 @@
  */
 package com.michelin.kafka.ensure.explicit;
 
-import com.michelin.kafka.ensure.explicit.naming.KafkaStreamsApp;
-import org.apache.kafka.streams.*;
-import org.junit.jupiter.api.Test;
-
-import java.util.Properties;
-
 import static org.apache.kafka.streams.StreamsConfig.*;
 import static org.junit.jupiter.api.Assertions.*;
+
+import com.michelin.kafka.ensure.explicit.naming.KafkaStreamsApp;
+import java.util.Properties;
+import org.apache.kafka.streams.*;
+import org.junit.jupiter.api.Test;
 
 class KafkaStreamsAppTest {
 
@@ -42,7 +41,6 @@ class KafkaStreamsAppTest {
 
         // Build the topology => this should throw a TopologyException
         assertDoesNotThrow(() -> streamsBuilder.build());
-
     }
 
     @Test
@@ -59,5 +57,4 @@ class KafkaStreamsAppTest {
         // Build the topology => this should throw a TopologyException
         assertDoesNotThrow(() -> streamsBuilder.build());
     }
-
 }
