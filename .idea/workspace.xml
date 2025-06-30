@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d944f14-a978-4d9a-87a0-190cf64fa995" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/commons/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/src/main/java/com/michelin/kafka/commons/DeliveryBooked.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/commons/src/main/java/com/michelin/kafka/commons/DeliveryBookedSerde.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-naming/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-naming/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-naming/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-naming/src/main/java/com/michelin/kafka/ensure/explicit/naming/KafkaStreamsApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-naming/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-naming/src/test/java/com/michelin/kafka/ensure/explicit/KafkaStreamsAppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/with-naming/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/without-naming/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/without-naming/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/without-naming/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/without-naming/src/main/java/com/michelin/kafka/ensure/explicit/naming/KafkaStreamsApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/without-naming/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/without-naming/src/test/java/com/michelin/kafka/ensure/explicit/naming/KafkaStreamsAppTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/4.1.0-SNAPSHOT/kafka-clients-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/clients/consumer/KafkaConsumer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/4.1.0-SNAPSHOT/kafka-clients-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/clients/consumer/internals/ConsumerCoordinator.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/4.1.0-SNAPSHOT/kafka-clients-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/common/serialization/Deserializer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.1.0-SNAPSHOT/kafka-streams-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/StreamsBuilder.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.1.0-SNAPSHOT/kafka-streams-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/kstream/Grouped.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.1.0-SNAPSHOT/kafka-streams-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/kstream/Joined.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.1.0-SNAPSHOT/kafka-streams-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/kstream/KGroupedStream.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.1.0-SNAPSHOT/kafka-streams-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/kstream/KStream.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.1.0-SNAPSHOT/kafka-streams-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/kstream/internals/InternalStreamsBuilder.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.1.0-SNAPSHOT/kafka-streams-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/processor/internals/InternalTopologyBuilder.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.1.0-SNAPSHOT/kafka-streams-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/processor/internals/RecordDeserializer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.1.0-SNAPSHOT/kafka-streams-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/processor/internals/RecordQueue.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.1.0-SNAPSHOT/kafka-streams-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/processor/internals/SourceNode.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.1.0-SNAPSHOT/kafka-streams-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/processor/internals/StreamThread.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-streams/4.2.0-SNAPSHOT/kafka-streams-4.2.0-SNAPSHOT-sources.jar!/org/apache/kafka/streams/TopologyConfig.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///opt/homebrew/Cellar/openjdk@21/21.0.7/libexec/openjdk.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Properties.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2y56ycYo6Lg5C0hKnLLBD7kMrHh" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.KafkaStreamsApp (1).executor": "Run",
+    "Application.KafkaStreamsApp.executor": "Run",
+    "JUnit.All in kafka-streams-ensure-explicit-internal-resource-naming.executor": "Run",
+    "JUnit.All in with-naming.executor": "Run",
+    "JUnit.All in without-naming.executor": "Run",
+    "JUnit.KafkaStreamsAppTest (1).executor": "Run",
+    "JUnit.KafkaStreamsAppTest (2).executor": "Run",
+    "JUnit.KafkaStreamsAppTest.executor": "Run",
+    "JUnit.KafkaStreamsAppTest.shouldCheckAndNotValidateTheTopology.executor": "Run",
+    "JUnit.KafkaStreamsAppTest.shouldCheckAndValidateTheTopology.executor": "Run",
+    "JUnit.KafkaStreamsAppTest.shouldNotCheckAndValidateTheTopology (1).executor": "Run",
+    "JUnit.KafkaStreamsAppTest.shouldNotCheckAndValidateTheTopology.executor": "Run",
+    "JUnit.KafkaStreamsAppTest.shouldNotCheckTheTopology (1).executor": "Run",
+    "JUnit.KafkaStreamsAppTest.shouldNotCheckTheTopology.executor": "Run",
+    "JUnit.com.michelin.kafka.ensure.explicit in with-naming.executor": "Run",
+    "JUnit.com.michelin.kafka.ensure.explicit.naming in without-naming.executor": "Run",
+    "Maven.kafka-streams-ensure-explicit-internal-resource-naming [clean].executor": "Run",
+    "Maven.kafka-streams-ensure-explicit-internal-resource-naming [compile].executor": "Run",
+    "Maven.kafka-streams-ensure-explicit-internal-resource-naming [test].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/sebastienviale/busdata/kafka_misc/kafka-streams-ensure-explicit-internal-resource-naming/common",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/without-naming/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/common/src/main/java/com/michelin/kafka" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.michelin.kafka.ensure.explicit" />
+      <recent name="com.michelin.kafka.ensure.explicit.naming" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.KafkaStreamsApp">
+    <configuration name="KafkaStreamsApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.michelin.kafka.ensure.explicit.naming.KafkaStreamsApp" />
+      <module name="without-naming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.michelin.kafka.ensure.explicit.naming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaStreamsApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.michelin.kafka.ensure.explicit.naming.KafkaStreamsApp" />
+      <module name="with-naming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.michelin.kafka.ensure.explicit.naming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in with-naming" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="with-naming" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaStreamsAppTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="with-naming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.michelin.kafka.ensure.explicit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.michelin.kafka.ensure.explicit" />
+      <option name="MAIN_CLASS_NAME" value="com.michelin.kafka.ensure.explicit.KafkaStreamsAppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KafkaStreamsAppTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="without-naming" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.michelin.kafka.ensure.explicit.naming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.michelin.kafka.ensure.explicit.naming" />
+      <option name="MAIN_CLASS_NAME" value="com.michelin.kafka.ensure.explicit.naming.KafkaStreamsAppTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.KafkaStreamsApp" />
+        <item itemvalue="Application.KafkaStreamsApp (1)" />
+        <item itemvalue="JUnit.KafkaStreamsAppTest" />
+        <item itemvalue="JUnit.KafkaStreamsAppTest (1)" />
+        <item itemvalue="JUnit.All in with-naming" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d944f14-a978-4d9a-87a0-190cf64fa995" name="Changes" comment="" />
+      <created>1749112343040</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749112343040</updated>
+      <workItem from="1749112344111" duration="142000" />
+      <workItem from="1749112493874" duration="8575000" />
+      <workItem from="1749190866526" duration="10719000" />
+      <workItem from="1749539635249" duration="11000" />
+      <workItem from="1749645850648" duration="1377000" />
+      <workItem from="1749709334126" duration="6125000" />
+      <workItem from="1749797392143" duration="1198000" />
+      <workItem from="1750055858065" duration="599000" />
+      <workItem from="1750098461941" duration="599000" />
+      <workItem from="1750140538166" duration="771000" />
+      <workItem from="1750273784651" duration="599000" />
+      <workItem from="1750312679308" duration="599000" />
+      <workItem from="1750340081372" duration="599000" />
+      <workItem from="1750404357762" duration="599000" />
+      <workItem from="1750748384333" duration="599000" />
+      <workItem from="1750832314656" duration="599000" />
+      <workItem from="1751266386927" duration="5180000" />
+      <workItem from="1751274606198" duration="7857000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/4.1.0-SNAPSHOT/kafka-clients-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/clients/consumer/internals/ConsumerRebalanceListenerInvoker.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/commons/src/main/java/com/michelin/kafka/ensure/explicit/naming/DeliveryBookedSerde.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/with-naming/src/main/java/com/michelin/kafka/ensure/explicit/naming/KafkaStreamsApp.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
