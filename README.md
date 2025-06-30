@@ -36,8 +36,8 @@ builder.stream("clicks")
 
 ```java
 builder.stream("clicks")
-    .filter((k, v) -> isValid(v))  // Nouvel opérateur !
-        .groupByKey()
+    .filter((k, v) -> isValid(v))  // New processor !
+    .groupByKey()
     .count()  // Store: KSTREAM-AGGREGATE-STATE-STORE-0000000002 ⚠️
     .toStream()
     .to("total-clicks");

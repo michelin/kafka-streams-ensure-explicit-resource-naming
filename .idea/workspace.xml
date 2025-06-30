@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d944f14-a978-4d9a-87a0-190cf64fa995" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/commons/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons/src/main/java/com/michelin/kafka/commons/DeliveryBooked.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commons/src/main/java/com/michelin/kafka/commons/DeliveryBookedSerde.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-naming/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-naming/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-naming/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-naming/src/main/java/com/michelin/kafka/ensure/explicit/naming/KafkaStreamsApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-naming/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-naming/src/test/java/com/michelin/kafka/ensure/explicit/KafkaStreamsAppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/with-naming/target/classes/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/without-naming/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/without-naming/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/without-naming/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/without-naming/src/main/java/com/michelin/kafka/ensure/explicit/naming/KafkaStreamsApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/without-naming/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/without-naming/src/test/java/com/michelin/kafka/ensure/explicit/naming/KafkaStreamsAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +20,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/4.1.0-SNAPSHOT/kafka-clients-4.1.0-SNAPSHOT-sources.jar!/org/apache/kafka/clients/consumer/KafkaConsumer.java" root0="SKIP_INSPECTION" />
@@ -93,7 +78,7 @@
     "Maven.kafka-streams-ensure-explicit-internal-resource-naming [test].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/sebastienviale/busdata/kafka_misc/kafka-streams-ensure-explicit-internal-resource-naming/common",
     "node.js.detected.package.eslint": "true",
@@ -231,7 +216,7 @@
       <workItem from="1750748384333" duration="599000" />
       <workItem from="1750832314656" duration="599000" />
       <workItem from="1751266386927" duration="5180000" />
-      <workItem from="1751274606198" duration="7857000" />
+      <workItem from="1751274606198" duration="10345000" />
     </task>
     <servers />
   </component>
