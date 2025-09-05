@@ -88,9 +88,9 @@ class KafkaStreamsAppTest {
 
         assertEquals(
                 """
-                               Invalid topology: Following changelog topic(s) has not been named: item_ref_topic-STATE-STORE-0000000002-changelog, KSTREAM-AGGREGATE-STATE-STORE-0000000011-changelog
-                               Following state store(s) has not been named: item_ref_topic-STATE-STORE-0000000002, KSTREAM-AGGREGATE-STATE-STORE-0000000011
-                               Following repartition topic(s) has not been named: KSTREAM-MAP-0000000001-repartition, KSTREAM-AGGREGATE-STATE-STORE-0000000011-repartition
+                        Invalid topology: Following changelog topic(s) has not been named: item_ref_topic-STATE-STORE-0000000002-changelog, KSTREAM-AGGREGATE-STATE-STORE-0000000011-changelog
+                        Following state store(s) has not been named: item_ref_topic-STATE-STORE-0000000002, KSTREAM-AGGREGATE-STATE-STORE-0000000011
+                        Following repartition topic(s) has not been named: KSTREAM-MAP-0000000001-repartition, KSTREAM-AGGREGATE-STATE-STORE-0000000011-repartition
                         """,
                 topologyException.getMessage());
     }
