@@ -18,10 +18,14 @@
  */
 package com.michelin.kafka.ensure.explicit.naming;
 
+import static org.apache.kafka.streams.StreamsConfig.*;
+import static org.junit.jupiter.api.Assertions.*;
+
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.read.ListAppender;
+import java.util.Properties;
 import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.TopologyConfig;
@@ -29,11 +33,6 @@ import org.apache.kafka.streams.errors.TopologyException;
 import org.apache.kafka.streams.processor.internals.InternalTopologyBuilder;
 import org.junit.jupiter.api.Test;
 import org.slf4j.LoggerFactory;
-
-import java.util.Properties;
-
-import static org.apache.kafka.streams.StreamsConfig.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 class KafkaStreamsAppTest {
 
@@ -62,8 +61,8 @@ class KafkaStreamsAppTest {
                 .anyMatch(
                         event -> event.getLevel() == Level.WARN
                                 && event.getFormattedMessage()
-                                .contains(
-                                        """
+                                        .contains(
+                                                """
                                                 Explicit naming for internal resources is currently disabled. If you want to enforce user-defined names for all internal resources, set ensure.explicit.internal.resource.naming to true. Note: Changing internal resource names may require a full streams application reset for an already deployed application. Consult the documentation on naming operators for more details. Following changelog topic(s) has not been named: item_ref_topic-STATE-STORE-0000000002-changelog, KSTREAM-AGGREGATE-STATE-STORE-0000000011-changelog
                                                 Following state store(s) has not been named: item_ref_topic-STATE-STORE-0000000002, KSTREAM-AGGREGATE-STATE-STORE-0000000011
                                                 Following repartition topic(s) has not been named: KSTREAM-MAP-0000000001-repartition, KSTREAM-AGGREGATE-STATE-STORE-0000000011-repartition
