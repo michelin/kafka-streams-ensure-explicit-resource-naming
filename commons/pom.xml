@@ -9,7 +9,4 @@
     </parent>
     <artifactId>commons</artifactId>
 
-    <dependencies>
-    </dependencies>
-
 </project>
