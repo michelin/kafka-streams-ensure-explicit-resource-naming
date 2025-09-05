@@ -9,23 +9,4 @@
     </parent>
     <artifactId>commons</artifactId>
 
-    <dependencies>
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.kafka</groupId>-->
-        <!--            <artifactId>kafka-streams</artifactId>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>io.confluent</groupId>-->
-        <!--            <artifactId>kafka-streams-avro-serde</artifactId>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.michelin</groupId>-->
-        <!--            <artifactId>avro-model</artifactId>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.projectlombok</groupId>-->
-        <!--            <artifactId>lombok</artifactId>-->
-        <!--        </dependency>-->
-    </dependencies>
-
 </project>
