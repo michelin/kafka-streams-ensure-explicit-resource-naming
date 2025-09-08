@@ -47,7 +47,7 @@ public class KafkaStreamsApp {
 
         final StreamsBuilder streamsBuilder = new StreamsBuilder(new TopologyConfig(new StreamsConfig(properties)));
         buildTopology(streamsBuilder);
-        System.out.println(streamsBuilder.build().describe());
+
         KafkaStreams kafkaStreams = new KafkaStreams(streamsBuilder.build(), properties);
         Runtime.getRuntime().addShutdownHook(new Thread(kafkaStreams::close));
         kafkaStreams.start();
