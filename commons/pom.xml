@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.michelin.kafka</groupId>
-        <artifactId>kafka-streams-ensure-explicit-internal-resource-naming</artifactId>
+        <artifactId>kafka-streams-ensure-explicit-resource-naming</artifactId>
         <version>1.0.0</version>
     </parent>
     <artifactId>commons</artifactId>

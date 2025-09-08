@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.michelin.kafka</groupId>
-    <artifactId>kafka-streams-ensure-explicit-internal-resource-naming</artifactId>
+    <artifactId>kafka-streams-ensure-explicit-resource-naming</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
@@ -154,7 +154,7 @@
                         <image>eclipse-temurin:21-jre-alpine</image>
                     </from>
                     <to>
-                        <image>docker.io/michelin/kafka-streams-ensure-explicit-internal-resource-naming:${project.artifactId}-${project.version}</image>
+                        <image>docker.io/michelin/kafka-streams-ensure-explicit-resource-naming:${project.artifactId}-${project.version}</image>
                     </to>
                 </configuration>
             </plugin>
