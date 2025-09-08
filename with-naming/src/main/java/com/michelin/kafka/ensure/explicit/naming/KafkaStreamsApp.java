@@ -21,8 +21,8 @@ package com.michelin.kafka.ensure.explicit.naming;
 import static org.apache.kafka.streams.StreamsConfig.*;
 
 import com.google.gson.Gson;
-import com.michelin.kafka.commons.DeliveryBooked;
-import com.michelin.kafka.commons.DeliveryBookedSerde;
+import com.michelin.kafka.ensure.explicit.naming.utils.DeliveryBooked;
+import com.michelin.kafka.ensure.explicit.naming.utils.DeliveryBookedSerde;
 import java.util.Optional;
 import java.util.Properties;
 import org.apache.kafka.common.serialization.Serdes;
