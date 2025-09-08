@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.michelin.kafka.commons;
+package com.michelin.kafka.ensure.explicit.naming.utils;
 
 import com.google.gson.Gson;
 import java.nio.charset.StandardCharsets;

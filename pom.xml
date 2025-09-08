@@ -8,7 +8,6 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>commons</module>
         <module>with-naming</module>
         <module>without-naming</module>
     </modules>
