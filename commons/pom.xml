@@ -8,5 +8,6 @@
         <version>1.0.0</version>
     </parent>
     <artifactId>commons</artifactId>
+    <packaging>pom</packaging>
 
 </project>
