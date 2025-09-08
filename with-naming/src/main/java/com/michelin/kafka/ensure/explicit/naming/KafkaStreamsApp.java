@@ -46,21 +46,22 @@ public class KafkaStreamsApp {
         properties.put(ENSURE_EXPLICIT_INTERNAL_RESOURCE_NAMING_CONFIG, true);
 
         final StreamsBuilder streamsBuilder = new StreamsBuilder(new TopologyConfig(new StreamsConfig(properties)));
+
         buildTopology(streamsBuilder);
-        System.out.println(streamsBuilder.build().describe());
-        KafkaStreams kafkaStreams = new KafkaStreams(streamsBuilder.build(), properties);
+
+        final KafkaStreams kafkaStreams = new KafkaStreams(streamsBuilder.build(), properties);
         Runtime.getRuntime().addShutdownHook(new Thread(kafkaStreams::close));
         kafkaStreams.start();
     }
 
-    public static void buildTopology(StreamsBuilder streamsBuilder) {
+    public static void buildTopology(final StreamsBuilder streamsBuilder) {
 
         // Define a custom Serde for DeliveryBooked objects
         DeliveryBookedSerde deliveryBookedSerde = new DeliveryBookedSerde();
 
         // Define the stream from the delivery booked topic
         // and parse the JSON value into a DeliveryBooked object
-        KStream<String, DeliveryBooked> stream = streamsBuilder.stream(
+        final KStream<String, DeliveryBooked> stream = streamsBuilder.stream(
                         "delivery_booked_topic", Consumed.with(Serdes.String(), Serdes.String()))
                 //   .filter((k, v) -> true)
                 .map((key, value) -> {
@@ -69,7 +70,7 @@ public class KafkaStreamsApp {
                 });
 
         // Define the table from the item reference topic
-        KTable<String, String> table = streamsBuilder.table(
+        final KTable<String, String> table = streamsBuilder.table(
                 "item_ref_topic",
                 Consumed.with(Serdes.String(), Serdes.String()),
                 Materialized.<String, String, KeyValueStore<Bytes, byte[]>>as(
@@ -79,7 +80,7 @@ public class KafkaStreamsApp {
 
         // Join the stream with the table
         // and enrich the DeliveryBooked object with the item information
-        KStream<String, DeliveryBooked> joinedStream = stream.join(
+        final KStream<String, DeliveryBooked> joinedStream = stream.join(
                 table,
                 (deliveryBooked, item) -> {
                     deliveryBooked.setItem(item);
@@ -90,7 +91,7 @@ public class KafkaStreamsApp {
                 );
 
         // Count the number of deliveries per item
-        KStream<String, Long> countStream = joinedStream
+        final KStream<String, Long> countStream = joinedStream
                 .groupBy(
                         (key, deliveryBooked) -> deliveryBooked.getItem(),
                         Grouped.with(
@@ -107,7 +108,7 @@ public class KafkaStreamsApp {
         countStream.to("delivery_booked_by_item_topic", Produced.with(Serdes.String(), Serdes.Long()));
     }
 
-    private static DeliveryBooked parseFromJson(String value) {
+    private static DeliveryBooked parseFromJson(final String value) {
         return gson.fromJson(value, DeliveryBooked.class);
     }
 }
