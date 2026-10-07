@@ -1,3 +1,7 @@
+<div align="center">
+
+This project is a code sample about [KIP-1111](https://cwiki.apache.org/confluence/display/KAFKA/KIP-1111:+Enforcing+Explicit+Naming+for+Kafka+Streams+Internal+Topics). It is valid at least up to Apache Kafka 4.1.0, but will no longer evolve.
+
 # Ensure Kafka Streams Explicit Resource Naming
 
 [![GitHub Build](https://img.shields.io/github/actions/workflow/status/michelin/kafka-streams-ensure-explicit-resource-naming/build.yml?branch=main&logo=github&style=for-the-badge)](https://github.com/michelin/kafka-streams-ensure-explicit-resource-naming/actions/workflows/build.yml)
@@ -7,6 +11,8 @@
 [Overview](#Overview) • [The Problem](#the-problem) • [Why This Is a Problem](#why-this-is-a-problem) • [The Solution with KIP-1111](#the-solution-kip-1111) • [Important Warning](#important-warning) • [Examples](#examples)
 
 Available since Apache Kafka 4.1.0, A practical demonstration of **KIP-1111: Enforcing Explicit Naming for Kafka Streams Internal Topics** - showcasing why explicit naming of internal resources is crucial for production-ready Kafka Streams applications.
+
+</div>
 
 ## Overview
 
